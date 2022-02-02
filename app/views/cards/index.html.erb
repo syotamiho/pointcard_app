@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @cards.each do |card| %>
+    <div class="content_post" style="background-image: url(<%= card.image %>);">
+      <p><%= card.expiration %></p>
+      <span class="name">
+        <%= card.name %>
+      </span>
+    </div>
+  <% end %>
+</div>
